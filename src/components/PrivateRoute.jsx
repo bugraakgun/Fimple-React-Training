@@ -1,7 +1,12 @@
-import React from 'react'
+
+import { useUser } from '../context/user'
+import { Navigate, Outlet } from 'react-router-dom';
+
+
 
 export default function PrivateRoute() {
+    const {currentUser} = useUser();
   return (
-    <div>PrivateRoute</div>
+    currentUser ? <Outlet /> : <Navigate to="/giris" />
   )
 }
