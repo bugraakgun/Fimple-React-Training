@@ -1,7 +1,9 @@
-import React from 'react'
+import ApplicationListManage from "../components/ApplicationListManage"
+
+
 
 export default function ApplicationListManagement() {
   return (
-    <div>ApplicationListManagement</div>
+    <ApplicationListManage />
   )
 }

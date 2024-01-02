@@ -1,7 +1,8 @@
-import React from 'react'
+import React from "react";
+import ApplicationManage from "../components/ApplicationManage";
+import { useParams } from "react-router-dom";
 
 export default function ApplicationManagement() {
-  return (
-    <div>ApplicationManagement</div>
-  )
+  const { basvuruNo } = useParams();
+  return <ApplicationManage basvuruNo={basvuruNo} />;
 }
