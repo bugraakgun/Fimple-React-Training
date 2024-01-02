@@ -52,7 +52,7 @@ export default function ApplicationManage({ basvuruNo }) {
       <BreadCrumb className="p-3 border border-gray-700 rounded-lg" />
       {value && (
         <div className="flex flex-col justify-center items-center py-10 gap-3 ">
-          <div className="px-5 grid md:grid-cols-2 items-center w-full">
+          <div className="px-5 flex flex-col items-center w-full">
             <div className="flex flex-col items-center break-all">
               <span className="p-2 hover:bg-gray-200 transition-all">
                 <strong>İsim Soyisim:</strong> {value.name} - {value.surname}
@@ -84,7 +84,7 @@ export default function ApplicationManage({ basvuruNo }) {
                 {getFormattedDate(value.createAt)}
               </span>
             </div>
-            <div className="lg:w-2/3">
+            <div className="lg:w-1/3">
               <ImageView imageUrl={value.imageUrl} />
             </div>
           </div>

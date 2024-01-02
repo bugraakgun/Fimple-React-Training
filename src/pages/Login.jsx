@@ -67,7 +67,7 @@ export default function Login() {
             type="submit"
             className="bg-red-500 text-white py-2 px-10 rounded-full font-medium hover:bg-red-400 transition-all mt-12"
           >
-            LOG IN
+            Giriş Yap
           </button>
         </form>
 
