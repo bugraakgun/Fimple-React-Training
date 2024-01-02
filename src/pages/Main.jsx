@@ -1,7 +1,12 @@
 import React from 'react'
+import Header from '../components/Header'
+import CreateForm from '../components/CreateForm'
 
 export default function Main() {
   return (
-    <div>Main</div>
+    <>
+        <Header />
+        <CreateForm />
+    </>
   )
 }
