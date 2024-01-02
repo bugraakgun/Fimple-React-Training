@@ -16,7 +16,7 @@ export default function BreadCrumb({ className }) {
           Geri
         </Link>
       )}
-      <div className="mx-auto flex">
+      <div className="mx-auto flex flex-wrap">
         <Link to="/" className="flex justify-center items-center">
           <FaHouse className="mx-1" /> Anasayfa
         </Link>
@@ -26,7 +26,7 @@ export default function BreadCrumb({ className }) {
 
           return (
             <span key={name}>
-              {" > "}
+              <span>{" > "}</span>
               {isLast ? <span>{name}</span> : <Link to={routeTo}>{name}</Link>}
             </span>
           );
